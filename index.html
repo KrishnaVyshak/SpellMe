@@ -1,0 +1,274 @@
+<head>
+<link href="https://krishnavyshak.github.io/SpellMe/css/buttoncdn.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://egkoppel.github.io/product-sans/google-fonts.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+
+</head>
+<style>
+	@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+html, body{
+	padding:0;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+	}
+	.main {
+		margin-top: 10px;
+		}
+		
+		.title{
+			color: #535353;
+			}
+			.desc {
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 300;
+				padding-left: 10px;
+				padding-right: 10px;
+				}
+				.pure-material-button-contained {
+					font-family: Product Sans; 
+					font-weight: 100;
+					}
+					.pure-material-button-out {
+					font-family: Product Sans;
+					font-size: 17px;
+					padding-bottom: 2px;
+					font-weight: 100;
+					margin-top: 17px;
+					}
+					.pure-material-button-contained {
+					font-family: Product Sans;
+					font-size: 17px;
+					padding-bottom: 2px;
+					margin-top: 17px;
+					font-weight: 100;
+					}
+					
+					a {
+						font-size: 10px;
+						}
+						
+						.header {
+							display: flex;
+							}
+							      .modal-header {
+        padding-left: 3o;
+        align-items: center;
+
+        border-bottom: 0.5px solid #dadada;
+      }
+
+      .modal-contsent {
+        padding: 0 12px;
+        text-align: center;
+        align-items: center;
+      }
+
+      .modal-icons {
+        border-top: 0.5px solid #dadada;
+        height: 20px;
+        width: 100%;
+      }
+
+      .logo {
+        padding: 16px;
+      }
+
+      .logo-icon {
+        vertical-align: text-bottom;
+        margin-right: 12px;
+      }
+
+      .version {
+        color: #444;
+        font-size: 10px;
+      }
+
+img {
+        width: 50px;
+        margin-top: 7px;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6px;
+        padding: 10px;
+        align-items: center;
+      }
+
+      .flex {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        width: 220px;
+      }
+
+      .a:hover {
+        color: #ffffff;
+        background-color: #2f5876;
+      }
+      
+      /* super magic */
+      
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+</style>
+<script>
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
+
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+</script>
+
+
+
+<div class="main">
+<center>
+	<div class="modal-header">
+        <h1 class="title logo">
+          <img class="logo-icon" src="https://krishnavyshak.github.io/SpellMe/images/icon.png" />Spell Me
+          <span class="version">v0.0.1</span>
+        </h1>
+      </div>
+	
+<h3 class="desc">Spell Me is a Open-Source Chrome extension*  that allows you to check spellings and rhyming words as per a keyword.</h3>
+<a href="">*Not available in Chrome Web Store</a><br>
+<button id="product-sans"  class="pure-material-button-contained"> &nbsp;     &nbsp; &nbsp; <i class="fas fa-download"></i>  &nbsp; Download &nbsp; &nbsp; &nbsp; &nbsp;</button>
+<button id="product-sans"  class="pure-material-button-out"> &nbsp; &nbsp;&nbsp;<i class="fas fa-download"></i> &nbsp; Contribute &nbsp;  &nbsp;&nbsp;&nbsp;</button>
+<span><h2>How to setup?</h2></span>
+1. Download Spell Me
+<!---<img src="">---><br>
+2. Open Chrome / Brave<br>
+3. Goto Extensions management<br>
+4. Enable Developer Option<br>
+5. Click on “Pack Extension”<br>
+6. Chose the Spell Me Extension Folder you have downloaded.<br>
+7. You have done!<br>
+
+
+
+<footer><h3 style="font-size: 012px; font-weight: 60px;" class="desc">Copyright &copy; 2021 Krishnavyshak</h3></footer>
