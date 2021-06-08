@@ -1,10 +1,664 @@
 <head>
  
+<head>
+
+<title>Spell Me</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+<link rel="manifest" href="favicon/manifest.json">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+<meta name="theme-color" content="#ffffff">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
 <link href="https://krishnavyshak.github.io/SpellMe/css/buttoncdn.css" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 
- </head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://egkoppel.github.io/product-sans/google-fonts.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+
+</head>
+
+<style>
+
+	@font-face {
+
+  font-family: 'Product Sans';
+
+  font-style: normal;
+
+padding: 10px;
+
+width: 100%;
+
+  font-weight: 400;
+
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+
+}
+
+html, body{
+
+	padding:0;
+
+	margin:0;
+
+	font-family: 'Open Sans', sans-serif;
+
+	}
+
+	.main {
+
+		margin-top: 10px;
+
+		}
+
+		
+
+		.title{
+
+			color: #535353;
+
+			}
+
+			.desc {
+
+                                width: 100%;
+
+                                /*padding: 12px;*/
+
+				font-family: 'Open Sans', sans-serif;
+
+				font-weight: 300;
+
+				padding-left: 10px;
+
+				padding-right: 10px;
+
+				}
+
+				.pure-material-button-contained {
+
+size: 40px;
+
+					font-family: Product Sans; 
+
+					font-weight: 100;
+
+					}
+
+					.pure-material-button-out {
+
+					font-family: Product Sans;
+
+					font-size: 17px;
+
+					padding-bottom: 2px;
+
+					font-weight: 100;
+
+					margin-top: 17px;
+
+					}
+
+					.pure-material-button-contained {
+
+					font-family: Product Sans;
+
+					font-size: 17px;
+
+					padding-bottom: 2px;
+
+					margin-top: 17px;
+
+					font-weight: 100;
+
+					}
+
+					
+
+					a {
+
+						font-size: 10px;
+
+						}
+
+						
+
+						.header {
+
+							display: flex;
+
+							}
+
+							      .modal-header {
+
+        padding-left: 3o;
+<head>
+
+<title>Spell Me</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+<link rel="manifest" href="favicon/manifest.json">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+<meta name="theme-color" content="#ffffff">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<link href="https://krishnavyshak.github.io/SpellMe/css/buttoncdn.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://egkoppel.github.io/product-sans/google-fonts.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+
+</head>
+
+<style>
+
+	@font-face {
+
+  font-family: 'Product Sans';
+
+  font-style: normal;
+
+padding: 10px;
+
+width: 100%;
+
+  font-weight: 400;
+
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+
+}
+
+html, body{
+
+	padding:0;
+
+	margin:0;
+
+	font-family: 'Open Sans', sans-serif;
+
+	}
+
+	.main {
+
+		margin-top: 10px;
+
+		}
+
+		
+
+		.title{
+
+			color: #535353;
+
+			}
+
+			.desc {
+
+                                width: 100%;
+
+                                /*padding: 12px;*/
+
+				font-family: 'Open Sans', sans-serif;
+
+				font-weight: 300;
+
+				padding-left: 10px;
+
+				padding-right: 10px;
+
+				}
+
+				.pure-material-button-contained {
+
+size: 40px;
+
+					font-family: Product Sans; 
+
+					font-weight: 100;
+
+					}
+
+					.pure-material-button-out {
+
+					font-family: Product Sans;
+
+					font-size: 17px;
+
+					padding-bottom: 2px;
+
+					font-weight: 100;
+
+					margin-top: 17px;
+
+					}
+
+					.pure-material-button-contained {
+
+					font-family: Product Sans;
+
+					font-size: 17px;
+
+					padding-bottom: 2px;
+
+					margin-top: 17px;
+
+					font-weight: 100;
+
+					}
+
+					
+
+					a {
+
+						font-size: 10px;
+
+						}
+
+						
+
+						.header {
+
+							display: flex;
+
+							}
+
+							      .modal-header {
+
+        padding-left: 3o;
+
+        align-items: center;
+
+        border-bottom: 0.5px solid #dadada;
+
+      }
+
+      .modal-contsent {
+
+        padding: 0 12px;
+
+        text-align: center;
+
+        align-items: center;
+
+      }
+
+      .modal-icons {
+
+        border-top: 0.5px solid #dadada;
+
+        height: 20px;
+
+        width: 100%;
+
+      }
+
+      .logo {
+
+        padding: 16px;
+
+      }
+
+      .logo-icon {
+
+        vertical-align: text-bottom;
+
+        margin-right: 12px;
+
+      }
+
+      .version {
+
+        color: #444;
+
+        font-size: 10px;
+
+      }
+
+img {
+
+        width: 50px;
+
+        margin-top: 7px;
+
+      }
+
+      .flex-container {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        margin-top: 6px;
+
+        padding: 10px;
+
+        align-items: center;
+
+      }
+
+      .flex {
+
+        opacity: 1;
+
+        transition: opacity 0.2s ease-in-out;
+
+        width: 220px;
+
+      }
+
+      .a:hover {
+
+        color: #ffffff;
+
+        background-color: #2f5876;
+
+      }
+
+      
+
+      /* super magic */
+
+      
+
+li {
+
+    list-style: none;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+</style>
+
+<div class="main">
+
+<center>
+
+	<div class="modal-header">
+
+        <h1 class="title logo">
+
+          <img class="logo-icon" src="https://krishnavyshak.github.io/SpellMe/images/icon.png" />Spell Me
+
+          <span class="version">v0.0.1</span>
+
+        </h1>
+
+      </div>
+
+<h3 class="desc">Spell Me is a Open-Source Chrome extension*  that allows you to check spellings and rhyming words as per a keyword.</h3>
+
+<a href="">*Not available in Chrome Web Store</a><br>
+
+<button id="product-sans" onclick="window.location.href='https://krishnavyshak.github.io/SpellMe/api/dist/SpellMeCompressed.zip'" class="pure-material-button-contained"> &nbsp;     &nbsp; &nbsp; <i class="fa fa-download"></i>  &nbsp; Download &nbsp; &nbsp; &nbsp; &nbsp;</button>
+
+<button id="product-sans" onclick="window.location.href='https://github.com/KrishnaVyshak/SpellMe'" class="pure-material-button-out"> &nbsp; &nbsp;&nbsp;<i class="fa fa-code"></i> &nbsp; Contribute &nbsp;  &nbsp;&nbsp;&nbsp;</button>
+
+	<br><br><iframe style="border:none" src="https://krishnavyshak.github.io/SpellMe/popup.html" scrolling="no" width="323px" height="520px"></iframe>
+
+  <style>
+
+      html, body {
+
+          padding: 0;
+
+          margin: 0;
+
+      }
+
+  </style><span><h2>How to setup?</h2></span>
+
+<button id="product-sans" onclick="window.location.href='https://krishnavyshak.github.io/SpellMe/docs'" class="pure-material-button-contained"> &nbsp;     &nbsp; &nbsp; <i class="fa fa-external-link"></i>  &nbsp; Read The Docs &nbsp; &nbsp; &nbsp; &nbsp;</button>
+
+<footer><h3 style="font-size: 012px; font-weight: 60px;" class="desc">Copyright &copy; 2021 Krishnavyshak</h3></footer>
+        align-items: center;
+
+        border-bottom: 0.5px solid #dadada;
+
+      }
+
+      .modal-contsent {
+
+        padding: 0 12px;
+
+        text-align: center;
+
+        align-items: center;
+
+      }
+
+      .modal-icons {
+
+        border-top: 0.5px solid #dadada;
+
+        height: 20px;
+
+        width: 100%;
+
+      }
+
+      .logo {
+
+        padding: 16px;
+
+      }
+
+      .logo-icon {
+
+        vertical-align: text-bottom;
+
+        margin-right: 12px;
+
+      }
+
+      .version {
+
+        color: #444;
+
+        font-size: 10px;
+
+      }
+
+img {
+
+        width: 50px;
+
+        margin-top: 7px;
+
+      }
+
+      .flex-container {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        margin-top: 6px;
+
+        padding: 10px;
+
+        align-items: center;
+
+      }
+
+      .flex {
+
+        opacity: 1;
+
+        transition: opacity 0.2s ease-in-out;
+
+        width: 220px;
+
+      }
+
+      .a:hover {
+
+        color: #ffffff;
+
+        background-color: #2f5876;
+
+      }
+
+      
+
+      /* super magic */
+
+      
+
+li {
+
+    list-style: none;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+</style>
+
+<div class="main">
+
+<center>
+
+	<div class="modal-header">
+
+        <h1 class="title logo">
+
+          <img class="logo-icon" src="https://krishnavyshak.github.io/SpellMe/images/icon.png" />Spell Me
+
+          <span class="version">v0.0.1</span>
+
+        </h1>
+
+      </div>
+
+<h3 class="desc">Spell Me is a Open-Source Chrome extension*  that allows you to check spellings and rhyming words as per a keyword.</h3>
+
+<a href="">*Not available in Chrome Web Store</a><br>
+
+<button id="product-sans" onclick="window.location.href='https://krishnavyshak.github.io/SpellMe/api/dist/SpellMeCompressed.zip'" class="pure-material-button-contained"> &nbsp;     &nbsp; &nbsp; <i class="fa fa-download"></i>  &nbsp; Download &nbsp; &nbsp; &nbsp; &nbsp;</button>
+
+<button id="product-sans" onclick="window.location.href='https://github.com/KrishnaVyshak/SpellMe'" class="pure-material-button-out"> &nbsp; &nbsp;&nbsp;<i class="fa fa-code"></i> &nbsp; Contribute &nbsp;  &nbsp;&nbsp;&nbsp;</button>
+
+	<br><br><iframe style="border:none" src="https://krishnavyshak.github.io/SpellMe/popup.html" scrolling="no" width="323px" height="520px"></iframe>
+
+  <style>
+
+      html, body {
+
+          padding: 0;
+
+          margin: 0;
+
+      }
+
+  </style><span><h2>How to setup?</h2></span>
+
+<button id="product-sans" onclick="window.location.href='https://krishnavyshak.github.io/SpellMe/docs'" class="pure-material-button-contained"> &nbsp;     &nbsp; &nbsp; <i class="fa fa-external-link"></i>  &nbsp; Read The Docs &nbsp; &nbsp; &nbsp; &nbsp;</button>
+
+<footer><h3 style="font-size: 012px; font-weight: 60px;" class="desc">Copyright &copy; 2021 Krishnavyshak</h3></footer>
+<!---
 <h1>Hello Goodie!</h1>
 <br>
  <button class="pure-material-button-contained">you are a good person.</button>
+--->
